@@ -17,18 +17,19 @@
 - [x] Add unit tests for scoring
 - [x] Add unit tests for database
 - [x] Add unit tests for watchlist
-- [ ] Confirm the complete test suite passes in GitHub Actions
-- [ ] Add coverage reporting and define a minimum coverage target
+- [x] Confirm the complete test suite passes in GitHub Actions
+- [x] Add coverage reporting and define a minimum coverage target (80% branch coverage)
 
 ## Phase 3 — eBay Source Connector
-- [ ] Confirm current eBay API/application requirements and approved endpoints
-- [ ] Add environment-variable configuration and `.env.example`
-- [ ] Implement eBay authentication/client module
-- [ ] Convert watchlist `SearchJob` objects into eBay search requests
-- [ ] Normalize eBay results into a common listing model
-- [ ] Handle pagination, rate limits, retries, and API errors
-- [ ] Add connector fixtures/mocks and automated tests
-- [ ] Persist discovered listings without duplicates
+- [x] Confirm current eBay API/application requirements and approved endpoints
+- [x] Add environment-variable configuration and `.env.example`
+- [x] Implement eBay authentication/client module
+- [x] Convert watchlist `SearchJob` objects into eBay search requests
+- [x] Normalize eBay results into a common listing model
+- [x] Handle pagination, rate limits, retries, and API errors
+- [x] Add connector fixtures/mocks and automated tests
+- [x] Persist discovered listings without duplicates
+- [ ] Run a live authenticated eBay smoke test with the user's eBay developer keyset
 
 ## Phase 4 — Comparable-Price Valuation
 - [ ] Define normalized comparable-sale data model

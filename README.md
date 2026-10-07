@@ -39,6 +39,12 @@ python -m pytest tests/ -v
 
 `strategy.yaml` → calculator → evaluator → scoring → database
 
-`watchlist.yaml` → watchlist loader → future marketplace connectors
+`watchlist.yaml` → watchlist loader → eBay Browse connector → normalized listings → database
 
-The next major implementation milestone is the eBay source connector and comparable-price valuation layer.
+The next major implementation milestone after the live eBay smoke test is comparable-price valuation.
+
+## eBay connector
+
+Phase 3 uses the official eBay Buy Browse API. Copy the variable names from `50-Code/.env.example` into your local/VPS environment and provide your own eBay Developer Program Client ID and Client Secret. Real credentials and generated access tokens must never be committed.
+
+The connector defaults to the eBay Canada marketplace (`EBAY_CA`) and CAD. Its automated tests use mocked HTTP responses, so CI does not require secrets.
