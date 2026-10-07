@@ -1,0 +1,188 @@
+watchlist:
+  - id: sony_wh1000xm5
+    enabled: true
+    name: Sony WH-1000XM5
+    brand: Sony
+    category: electronics
+    product_type: headphones
+    model_numbers: [WH-1000XM5, WH1000XM5]
+    search_terms: ["Sony WH-1000XM5", "Sony WH1000XM5", "WH-1000XM5 headphones"]
+    exclude_terms: ["case only", "ear pads", replacement, parts, broken, "not working"]
+    preferred_conditions: [new, new_open_box, used_like_new, used_excellent, used_good]
+    max_source_price: 150.00
+
+  - id: sony_wh1000xm4
+    enabled: true
+    name: Sony WH-1000XM4
+    brand: Sony
+    category: electronics
+    product_type: headphones
+    model_numbers: [WH-1000XM4, WH1000XM4]
+    search_terms: ["Sony WH-1000XM4", "Sony WH1000XM4", "WH-1000XM4 headphones"]
+    exclude_terms: ["case only", replacement, parts, broken, "not working"]
+    preferred_conditions: [new, new_open_box, used_like_new, used_excellent, used_good]
+    max_source_price: 120.00
+
+  - id: airpods_pro_2
+    enabled: true
+    name: Apple AirPods Pro 2nd Generation
+    brand: Apple
+    category: electronics
+    product_type: earbuds
+    model_numbers: []
+    search_terms: ["AirPods Pro 2", "Apple AirPods Pro 2nd Generation", "AirPods Pro second generation"]
+    exclude_terms: ["left earbud only", "right earbud only", "charging case only", "case only", replacement, replica, fake, clone]
+    preferred_conditions: [new, new_open_box, used_like_new, used_excellent]
+    max_source_price: 150.00
+    manual_review_required: true
+    notes: High counterfeit risk; verify authenticity before purchase.
+
+  - id: nintendo_switch_oled
+    enabled: true
+    name: Nintendo Switch OLED
+    brand: Nintendo
+    category: electronics
+    product_type: gaming_console
+    model_numbers: [HEG-001]
+    search_terms: ["Nintendo Switch OLED", "Switch OLED console", "Nintendo OLED HEG-001"]
+    exclude_terms: ["dock only", "tablet only", "screen only", "joy con only", "case only", parts, broken]
+    preferred_conditions: [new, new_open_box, used_like_new, used_excellent, used_good]
+    max_source_price: 150.00
+
+  - id: nintendo_switch_lite
+    enabled: true
+    name: Nintendo Switch Lite
+    brand: Nintendo
+    category: electronics
+    product_type: gaming_console
+    model_numbers: [HDH-001]
+    search_terms: ["Nintendo Switch Lite", "Switch Lite console", "Nintendo HDH-001"]
+    exclude_terms: ["case only", "screen only", parts, broken, "not working"]
+    preferred_conditions: [new, new_open_box, used_like_new, used_excellent, used_good]
+    max_source_price: 120.00
+
+  - id: jbl_charge_5
+    enabled: true
+    name: JBL Charge 5
+    brand: JBL
+    category: electronics
+    product_type: bluetooth_speaker
+    model_numbers: [JBLCHARGE5]
+    search_terms: ["JBL Charge 5", JBLCHARGE5]
+    exclude_terms: ["case only", "charger only", parts, broken, "not working"]
+    preferred_conditions: [new, new_open_box, used_like_new, used_excellent, used_good]
+    max_source_price: 100.00
+
+  - id: milwaukee_m18_drill
+    enabled: true
+    name: Milwaukee M18 Drill
+    brand: Milwaukee
+    category: tools
+    product_type: power_tool
+    model_numbers: []
+    search_terms: ["Milwaukee M18 drill", "Milwaukee M18 cordless drill"]
+    exclude_terms: ["battery only", "charger only", "case only", parts, broken, "not working"]
+    preferred_conditions: [new, new_open_box, used_like_new, used_excellent, used_good]
+    max_source_price: 125.00
+    manual_review_required: true
+
+  - id: dewalt_20v_drill
+    enabled: true
+    name: DeWalt 20V MAX Drill
+    brand: DeWalt
+    category: tools
+    product_type: power_tool
+    model_numbers: []
+    search_terms: ["DeWalt 20V MAX drill", "Dewalt cordless drill 20V"]
+    exclude_terms: ["battery only", "charger only", "case only", parts, broken]
+    preferred_conditions: [new, new_open_box, used_like_new, used_excellent, used_good]
+    max_source_price: 120.00
+    manual_review_required: true
+
+  - id: nike_air_force_1
+    enabled: true
+    name: Nike Air Force 1
+    brand: Nike
+    category: shoes
+    product_type: sneakers
+    model_numbers: []
+    search_terms: ["Nike Air Force 1", "Nike AF1"]
+    exclude_terms: [replica, fake, custom, inspired, kids, toddler]
+    preferred_conditions: [new, new_open_box, used_like_new, used_excellent]
+    max_source_price: 100.00
+    manual_review_required: true
+
+  - id: adidas_ultraboost
+    enabled: true
+    name: Adidas Ultraboost
+    brand: Adidas
+    category: shoes
+    product_type: sneakers
+    model_numbers: []
+    search_terms: ["Adidas Ultraboost", "Adidas Ultra Boost"]
+    exclude_terms: [replica, fake, kids, toddler]
+    preferred_conditions: [new, new_open_box, used_like_new, used_excellent]
+    max_source_price: 100.00
+    manual_review_required: true
+
+  - id: nike_tech_fleece
+    enabled: true
+    name: Nike Tech Fleece
+    brand: Nike
+    category: clothing
+    product_type: sportswear
+    model_numbers: []
+    search_terms: ["Nike Tech Fleece", "Nike Tech hoodie", "Nike Tech joggers"]
+    exclude_terms: [replica, fake, inspired, kids]
+    preferred_conditions: [new, new_open_box, used_like_new, used_excellent, used_good]
+    max_source_price: 100.00
+    manual_review_required: true
+
+  - id: lululemon_mens_hoodie
+    enabled: true
+    name: Lululemon Men's Hoodie
+    brand: Lululemon
+    category: clothing
+    product_type: hoodie
+    model_numbers: []
+    search_terms: ["Lululemon men's hoodie", "Lululemon hoodie men"]
+    exclude_terms: [women, girls, replica, fake]
+    preferred_conditions: [new, new_open_box, used_like_new, used_excellent, used_good]
+    max_source_price: 90.00
+    manual_review_required: true
+
+search_settings:
+  currency: CAD
+  max_results_per_search: 50
+  prefer_exact_model_matches: true
+  include_used_items: true
+  include_auctions: false
+  include_fixed_price: true
+  include_local_pickup: true
+  global_max_source_price: 150.00
+
+listing_filters:
+  exclude_global_terms: ["for parts", "parts only", "not working", broken, damaged, untested, replica, fake, clone, inspired, "read description"]
+  minimum_title_length: 8
+  require_price: true
+  require_title: true
+  require_model_number: false
+
+source_priority:
+  - source: ebay
+    enabled: true
+    priority: 1
+  - source: facebook_marketplace
+    enabled: false
+    priority: 2
+  - source: kijiji
+    enabled: false
+    priority: 3
+  - source: retail_clearance
+    enabled: false
+    priority: 4
+
+discovery:
+  enable_unknown_product_discovery: false
+  enable_trending_product_discovery: false
+  enable_category_wide_search: false

@@ -1,0 +1,102 @@
+purchase_limits:
+  minimum_purchase_price: 10.00
+  maximum_purchase_price: 150.00
+
+profit_requirements:
+  minimum_net_profit: 25.00
+  minimum_roi_percent: 35.0
+  minimum_profit_margin_percent: 15.0
+  minimum_discount_to_market_percent: 20.0
+
+valuation:
+  quick_sale_discount_percent: 10.0
+  minimum_price_confidence: 70.0
+
+costs:
+  include_purchase_tax: true
+  purchase_tax_percent: 13.0
+  default_selling_fee_percent: 13.0
+  default_outbound_shipping: 15.0
+  default_other_costs: 2.0
+
+condition:
+  allowed:
+    - new
+    - new_open_box
+    - used_like_new
+    - used_excellent
+    - used_good
+  excluded:
+    - for_parts
+    - broken
+    - damaged
+    - unknown
+  resale_adjustments:
+    new: 1.00
+    new_open_box: 0.95
+    used_like_new: 0.92
+    used_excellent: 0.88
+    used_good: 0.80
+
+categories:
+  enabled:
+    - electronics
+    - tools
+    - clothing
+    - shoes
+  disabled:
+    - food
+    - supplements
+    - cosmetics
+    - medical
+    - automotive_parts
+    - collectibles
+
+matching:
+  minimum_match_confidence: 80.0
+  strong_match_confidence: 95.0
+
+risk_filters:
+  reject_phrases:
+    - for parts
+    - parts only
+    - not working
+    - untested
+    - as is
+    - no returns
+    - replica
+    - fake
+    - inspired
+    - read description
+  manual_review_if:
+    - price_is_extremely_low
+    - seller_has_low_feedback
+    - missing_model_number
+    - missing_condition
+    - possible_counterfeit
+    - unusually_high_market_value
+    - poor_product_match
+
+scoring:
+  weights:
+    roi: 30
+    net_profit: 25
+    discount_to_market: 15
+    price_confidence: 10
+    match_confidence: 10
+    condition: 5
+    seller_quality: 5
+  thresholds:
+    exceptional: 90
+    strong: 80
+    investigate: 70
+    weak: 60
+    reject_below: 60
+
+alerts:
+  enabled: true
+  minimum_score: 80
+  minimum_profit: 25
+  minimum_roi_percent: 35
+  minimum_match_confidence: 80
+  suppress_duplicate_listings: true

@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Local data / databases
+50-Code/data/
+*.db
+*.sqlite
+*.sqlite3
+
+# Secrets / local config
+.env
+.env.*
+!.env.example
+*.local.*
+.claude/settings.local.json
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
