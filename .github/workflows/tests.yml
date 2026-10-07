@@ -16,4 +16,12 @@ jobs:
         with:
           python-version: '3.12'
       - run: pip install -r requirements.txt
-      - run: python -m pytest tests/ -v
+      - name: Run tests with coverage
+        run: python -m pytest tests/ -v --cov=dealfinder --cov-branch --cov-report=term-missing --cov-report=xml:coverage.xml --cov-fail-under=80
+      - name: Upload coverage report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage-report
+          path: 50-Code/coverage.xml
+          if-no-files-found: warn
